@@ -1,0 +1,40 @@
+Log Type: syslog
+
+Log Upload Time: Sun Sep 09 23:36:21 +0530 2018
+
+Log Length: 4451
+
+2018-09-09 18:02:28,767 INFO [main] org.apache.hadoop.security.SecurityUtil: Updating Configuration
+2018-09-09 18:02:28,812 WARN [main] org.apache.hadoop.metrics2.impl.MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-maptask.properties,hadoop-metrics2.properties
+2018-09-09 18:02:28,896 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-09-09 18:02:28,896 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2018-09-09 18:02:28,905 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2018-09-09 18:02:28,905 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1524406905265_2821, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@76494737)
+2018-09-09 18:02:29,111 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2018-09-09 18:02:29,386 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /scratch-node-local/yarn/local/usercache/kapilpathak/appcache/application_1524406905265_2821
+2018-09-09 18:02:29,794 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-09-09 18:02:30,307 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-09-09 18:02:30,308 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-09 18:02:30,320 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-09 18:02:30,518 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://turing.cds.iisc.ac.in:8020/user/ds222/assignment-1/DBPedia.full/full_train.txt:0+131282595
+2018-09-09 18:02:31,604 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 536608764(2146435056)
+2018-09-09 18:02:31,604 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 2047
+2018-09-09 18:02:31,604 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 1502504576
+2018-09-09 18:02:31,604 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 2146435072
+2018-09-09 18:02:31,604 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 536608764; length = 134152192
+2018-09-09 18:02:31,606 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-09 18:03:22,036 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-09-09 18:03:22,036 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 1010315277; bufvoid = 2146435072
+2018-09-09 18:03:22,036 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 536608764(2146435056); kvend = 413561436(1654245744); length = 123047329/134152192
+2018-09-09 18:03:22,036 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 1224958749 kvi 306239680(1224958720)
+2018-09-09 18:03:31,099 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-09-09 18:04:18,584 INFO [SpillThread] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-09-09 18:04:18,584 INFO [main] org.apache.hadoop.mapred.MapTask: (RESET) equator 1224958749 kv 306239680(1224958720) kvi 290976452(1163905808)
+2018-09-09 18:04:18,584 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-09-09 18:04:18,584 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 1224958749; bufend = 1347022446; bufvoid = 2146435072
+2018-09-09 18:04:18,585 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 306239680(1224958720); kvend = 290976456(1163905824); length = 15263225/134152192
+2018-09-09 18:04:24,263 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 1
+2018-09-09 18:04:24,389 INFO [main] org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2018-09-09 18:04:24,397 INFO [main] org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1201534210 bytes
+2018-09-09 18:04:52,914 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1524406905265_2821_m_000000_0 is done. And is in the process of committing
+2018-09-09 18:04:52,961 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1524406905265_2821_m_000000_0' done.
