@@ -1,0 +1,7 @@
+python GenerateKeys.py |LC_ALL=C sort| python CountByValues1.py>TrainingMessages.csv
+grep W=ANYWORD TrainingMessages.csv>WordCountForEachLabel.csv
+grep Y1 TrainingMessages.csv>LabelCount.csv
+grep -v Y1 TrainingMessages.csv|grep -v W=ANYWORD|grep -v ANYTITLE|python ChangeC_Csharp_1.py|LC_ALL=C sort>NewDictionary.csv
+python SortCsharp.py|python Testing_NB_1.py|sort>MergeStep.txt
+python Testing_NB_req_response.py|sort -n>final.txt
+sed '/^\s*$/d' final.txt>final1.csv
